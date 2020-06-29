@@ -12,6 +12,7 @@ module Jets::Resource::Iam
           type: "AWS::IAM::Role",
           properties: {
             path: "/",
+            permissions_boundary: "arn:aws:iam::575654119881:policy/GCCIAccountBoundary",
             assume_role_policy_document: {
               version: "2012-10-17",
               statement: [{
